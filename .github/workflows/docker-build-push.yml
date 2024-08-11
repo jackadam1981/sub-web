@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - run: echo "💡 The ${{ secrets.DOCKERHUB_USERNAME }} repository has been cloned to the runner."
+    - run: echo "💡 The ${{ secrets.DOCKERHUB_TOKEN }} repository has been cloned to the runner."
     - name: Check out repository
       uses: actions/checkout@master
 
